@@ -5,7 +5,9 @@ import java.util.Arrays;
 public class TrianglePerimeter {
 
     static int[][] d = new int[3][2];
-
+    
+    //2022-02-15
+    //삼각형 둘레 구하기
     public static void main(String[] args) {
 
         d[0][0] = 0;
