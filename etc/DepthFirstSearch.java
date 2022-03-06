@@ -1,4 +1,4 @@
-package feb05;
+package self.etc;
 /**
  * 깊이우선탐색
  *

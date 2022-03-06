@@ -1,4 +1,4 @@
-package feb20;
+package self.nadongbin.greedy;
 
 import java.util.Scanner;
 

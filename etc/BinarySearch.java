@@ -1,4 +1,4 @@
-package feb05;
+package self.etc;
 
 /**
  * 2진탐색 의 전제조건 -렌덤엑세스 가능한 정렬된데이타.

@@ -1,4 +1,4 @@
-package feb05;
+package self.etc;
 
 public class FibonacciTest {
 
@@ -19,7 +19,7 @@ public class FibonacciTest {
     int fibo_v1(int loc) {
         if(loc < 0) {
             System.out.println("파라미터는 1부터 큰 수부터 입력가능합니다.");
-            return 0; 
+            return 0;
         }
         if(loc <= 2) {
             return 1;
