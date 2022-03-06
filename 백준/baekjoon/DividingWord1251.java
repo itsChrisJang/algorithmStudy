@@ -54,5 +54,6 @@ public class DividingWord1251 {
         }
         list.add(sb.toString());
         sb.setLength(0);        // 초기화해서 메모리 해제
+
     }
 }

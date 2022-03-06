@@ -1,4 +1,4 @@
-package self.baekjoon;
+package self.baekjoon.bfsNdfs;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,6 +13,9 @@ public class NandM15650 {
 
     // 백준 15650번
     // 백트래킹 > dfs 탐색방식
+    // 백트래킹 란?
+    // 해를 찾는 도중 해가 아니어서 막히면, 되돌아가서 다시 해를 찾아가는 기법
+    // 깊이 우선 탐색(DFS) 란?
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

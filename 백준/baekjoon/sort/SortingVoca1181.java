@@ -1,4 +1,4 @@
-package feb22;
+package self.baekjoon.sort;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class SortingVoca {
+public class SortingVoca1181 {
 
     // 백준 1181번
     // 알파벳 소문자로 이루어진 N개의 단어가 들어오면 아래와 같은 조건에 따라 정렬하는 프로그램을 작성하시오.
@@ -90,6 +90,7 @@ public class Main {
 }
 
 *********************************************************************************************
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;

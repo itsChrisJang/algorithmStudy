@@ -1,4 +1,4 @@
-package self.baekjoon;
+package self.baekjoon.dp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,8 +16,10 @@ public class TwoMulitipleN11726 {
 
         if(n == 2) {
             System.out.println(2);
+            return;
         }else if(n == 1) {
             System.out.println(1);
+            return;
 
         }
         int[] np = new int[n];
