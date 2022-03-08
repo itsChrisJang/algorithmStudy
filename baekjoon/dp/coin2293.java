@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class coin2293 {
-
+//AscentNumber11057
+public class Coin2293 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static int n, k;
     private static int[] arr, dp;
@@ -28,5 +28,4 @@ public class coin2293 {
 
         System.out.println(dp[k]);
     }
-
 }
