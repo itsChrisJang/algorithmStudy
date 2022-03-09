@@ -3,51 +3,31 @@ package self.baekjoon.dp;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class AscentNumber11057 {
 
-    static int cnt = 0;
-    static int N =0;
-
-    // 백준 11067번
+    // 백준 11057번
     // DP
-    // 시간 초과
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
 
-        N = Integer.parseInt(br.readLine());
+        //DP[N][K]는 N개 자리의 숫자 중 가장 맨뒤의 숫자가 K일때의 경우의 수
+        int[][] dp = new int[N+1][10];
 
-        for(; N>=1; N--) {
-            String[] str = new String[N];
-            //0 10 100 1000
-            // 1 2   3    4
-            int from = (N == 1) ? 0 : (int) Math.pow(10, N-1);
+        for(int i = 0; i < 10; i++) {
+            dp[0][i] = 1;
+        }
 
-            int to = ((int) Math.pow(10, N)) - 1;
-
-            for(;from <= to; from++) {
-                str = String.valueOf(from).split("");
-                check(str);
+        for(int i = 1; i < N+1; i++) {
+            for(int j = 0; j < 10; j++) {
+                for(int k = j; k < 10; k++) {
+                    dp[i][j] += dp[i-1][k];
+                    dp[i][j] %= 10007;
+                }
             }
         }
 
-        System.out.println(cnt%10007);
-
-    }
-
-    static void check(String[] str) {
-        for(int i=0; i<str.length; i++) {
-
-            if(i != N - 1) {
-                if(strToInt(str[i]) > strToInt(str[i+1])) break;
-            }else {
-                cnt++;
-            }
-        }
-    }
-
-    static int strToInt(String str) {
-        return Integer.parseInt(str);
+        System.out.println(dp[N][0] % 10007);
     }
 }
