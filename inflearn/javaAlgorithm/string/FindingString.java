@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 1. 문자 찾기
 public class FindingString {
     public int solution(String str, char t) {
         int answer = 0;

@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 2. 대소문자 변환
 public class ChangingStrEngCase {
     public String solution(String str) {
         String answer = "";

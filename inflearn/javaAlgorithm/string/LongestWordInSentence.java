@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 3. 문장 속 단어(indexOf(), substring())
 public class LongestWordInSentence {
     public String solution(String str) {
         String answer = "";

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+// 4. 단어 뒤집기(StringBuilder이용법 또는 직접뒤집기)
 //reverse
 public class FlipAWord {
     public ArrayList<String> solution(int n, String[] str) {

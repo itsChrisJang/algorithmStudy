@@ -5,8 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-//study => yduts
-//12345 => 1,5 변경/ 2,4 변경 / 3 변경
+// 4. 단어 뒤집기(StringBuilder이용법 또는 직접뒤집기)
+// study => yduts
+// 12345 => 1,5 변경/ 2,4 변경 / 3 변경
 public class FlipAWord2 {
     public ArrayList<String> solution(int n, String[] str) {
         ArrayList<String> answer = new ArrayList<>();
