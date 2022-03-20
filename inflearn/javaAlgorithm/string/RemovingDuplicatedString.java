@@ -4,28 +4,22 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class LongestWordInSentence {
+// 6. 중복 문자 제거
+public class RemovingDuplicatedString {
     public String solution(String str) {
         String answer = "";
-        int m = Integer.MIN_VALUE;
-        String[] s = str.split(" ");
-
-        // 처음부터 for문으로 단순 비교하기
-        for(String x : s) {
-            int len = x.length();
-            if(len > m) {
-                m = len;
-                answer = x;
-            }
+        for(int i=0; i<str.length(); i++) {
+            //중복 제거 확인 out
+            //System.out.println(str.charAt(i) + " " + i + str.indexOf(str.charAt(i)));
+            if(str.indexOf(str.charAt(i)) == i) answer += str.charAt(i);
         }
-
         return answer;
     }
 
     public static void main(String[] args) throws IOException {
-        LongestWordInSentence fs = new LongestWordInSentence();
-
+        RemovingDuplicatedString fs = new RemovingDuplicatedString();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         String str = br.readLine();
 
         System.out.println(fs.solution(str));

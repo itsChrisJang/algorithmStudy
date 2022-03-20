@@ -4,28 +4,21 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class LongestWordInSentence {
+// 7. 회문문자열
+public class PalindromeString2 {
     public String solution(String str) {
-        String answer = "";
-        int m = Integer.MIN_VALUE;
-        String[] s = str.split(" ");
-
-        // 처음부터 for문으로 단순 비교하기
-        for(String x : s) {
-            int len = x.length();
-            if(len > m) {
-                m = len;
-                answer = x;
-            }
-        }
+        String answer = "NO";
+        String tmp = new StringBuilder(str).reverse().toString();
+        // "".equalsIgnoreCase("") 대소문자 상관없이 같은 경우.
+        if(str.equalsIgnoreCase(tmp)) answer = "YES";
 
         return answer;
     }
 
     public static void main(String[] args) throws IOException {
-        LongestWordInSentence fs = new LongestWordInSentence();
-
+        PalindromeString2 fs = new PalindromeString2();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         String str = br.readLine();
 
         System.out.println(fs.solution(str));
