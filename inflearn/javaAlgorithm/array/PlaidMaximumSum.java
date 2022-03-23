@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
 //          19 27 29 37 27
 //          19 13 30 13 19
 // Output : 155
-public class GetRankings {
+public class PlaidMaximumSum {
     public int solution(int n, int[][] arr) {
         // ?
         int answer = Integer.MIN_VALUE;
@@ -43,7 +43,7 @@ public class GetRankings {
     }
 
     public static void main(String[] args) throws IOException {
-        GetRankings fs = new GetRankings();
+        PlaidMaximumSum fs = new PlaidMaximumSum();
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
