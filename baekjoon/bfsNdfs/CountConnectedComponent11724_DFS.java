@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class CountConnectedComponent11724_ {
+public class CountConnectedComponent11724_DFS {
     // platform | Baekjoon
     // number   | 11724
     // title    | 연결 요소의 개수
