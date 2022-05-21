@@ -19,5 +19,21 @@ public class Sum11720 {
             sum += (value - '0');   // 또는 (a-48)
         }
         System.out.print(sum);
+
+        /*
+         *  Solution 2
+            Scanner in = new Scanner(System.in);
+
+            int N = in.nextInt();
+            String a = in.next();
+            in.close();
+
+            int sum = 0;
+
+            for(int i = 0; i < N; i++) {
+                sum += a.charAt(i)-'0';
+            }
+            System.out.print(sum);
+         */
     }
 }
