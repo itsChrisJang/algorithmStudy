@@ -10,6 +10,7 @@ public class NewRecruit1946_Comparator {
 
     // 백준 1946번
     // 신입사원
+    // Comparator 사용.
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
