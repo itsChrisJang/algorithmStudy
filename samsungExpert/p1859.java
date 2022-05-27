@@ -13,9 +13,6 @@ import java.util.StringTokenizer;
 // result   | 
 public class p1859 {
     public static void main(String[] args) throws FileNotFoundException {
-        // TODO Auto-generated method stub
-        System.setIn(new FileInputStream("./src/1859.txt"));
-
         Scanner sc = new Scanner(System.in);
 
         int T=sc.nextInt();
@@ -39,7 +36,7 @@ public class p1859 {
                     sum+=mg;
                 }
             }
-            System.out.printf("#%d %d%n",test_case,sum);
+            System.out.printf("#%d %d%n", test_case, sum);
         }
     }
 }
