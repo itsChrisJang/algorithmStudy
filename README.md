@@ -1,12 +1,5 @@
-# 자바 알고리즘 스터디
+# Daily Solving Algorithm 
 
-```
-목차
-1. Goal
-2. Platform
-3. Promise
-4. Me
-```
 ## Goal
 ```
 개발자에게 CS 지식은 기본 소양이다. 
@@ -15,13 +8,13 @@
 
 ## Platform
 ```
-1. 백준
-2. 그 외 서적
+-. 백준
+-. SWEA
 ```
 
 ## Promise
 ```
-꾸준하게 하루 한 문제라도!!
+Slow and steady win the game
 ```
 
 ## Me
