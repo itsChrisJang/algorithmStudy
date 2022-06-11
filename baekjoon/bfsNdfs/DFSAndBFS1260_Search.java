@@ -51,7 +51,7 @@ public class DFSAndBFS1260_Search {
         BFS(V);
     }
 
-    static void DFS(int v) {
+     static void DFS(int v) {
         if(visited[v])
             return;
 
