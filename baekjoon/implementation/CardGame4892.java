@@ -15,26 +15,28 @@ level    | Bronze 3
 how      | 
 etc      |
 */
-public class ChickenDelievery15686_ {
+public class CardGame4892 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int cnt = 1;
 
-        while(true) {
-        int n = sc.nextInt();
+        while (true) {
+            int n = sc.nextInt();
 
-        if(n == 0) break;
+            if (n == 0) break;
 
-        int n1 = 3 * n;
+            int n1 = 3 * n;
 
-        if(n1 % 2 == 0) {
-            int n4 = n / 2;
-            System.out.println(cnt + ". even " + n4);
-        } else {
-            int n4 = (n - 1) / 2;
-            System.out.println(cnt + ". odd " + n4);
+            if (n1 % 2 == 0) {
+                int n4 = n / 2;
+                System.out.println(cnt + ". even " + n4);
+            } else {
+                int n4 = (n - 1) / 2;
+                System.out.println(cnt + ". odd " + n4);
+            }
+
+            cnt++;
         }
 
-        cnt++;
     }
-
+}
