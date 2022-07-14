@@ -5,20 +5,21 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-// 11. 임시반장 정하기
-// Input  : 5
-//          2 3 1 7 3
-//          4 1 9 6 8
-//          5 5 2 4 4
-//          6 5 2 6 7
-//          8 4 2 2 2
-// Output : 4
+//
+/*
+platform | inflearn java
+number   | 11
+title    | 임시반장 정하기
+how      |
+etc      |
+ */
 public class TemporaryClassLeader {
+
     public int solution(int n, int[][] arr) {
-        int answer = 0, max=Integer.MIN_VALUE;
+        int answer = 0, max = Integer.MIN_VALUE;
         for(int i=1; i<=n; i++) {
-            int cnt=0;
-            for(int j=1; j<=n; j++) {
+            int cnt = 0;
+            for(int j=1;j<=n; j++) {
                 for(int k=1; k<=5; k++) {
                     if(arr[i][k] == arr[j][k]) {
                         cnt++;
@@ -26,6 +27,7 @@ public class TemporaryClassLeader {
                     }
                 }
             }
+
             if(cnt > max) {
                 max = cnt;
                 answer = i;
@@ -33,7 +35,6 @@ public class TemporaryClassLeader {
         }
         return answer;
     }
-
     public static void main(String[] args) throws IOException {
         TemporaryClassLeader fs = new TemporaryClassLeader();
 
