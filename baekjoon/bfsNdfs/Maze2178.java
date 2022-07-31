@@ -1,5 +1,7 @@
 package self.baekjoon.bfsNdfs;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 /*
@@ -51,7 +53,7 @@ public class Maze2178 {
 
     static public void BFS(int x, int y) {
 
-        Queue<Dot> q = new LinkedList<Dot>();
+        Queue<Dot> q = new LinkedList<>();
         q.add(new Dot(x, y));
         //큐가 끝날때 까지
         while (!q.isEmpty()) {
