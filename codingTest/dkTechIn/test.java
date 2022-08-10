@@ -34,8 +34,13 @@ public class test {
                     // ☞  바로 위쪽 라인만 직접 작성
                     //   : 한 라인 읽을 때마다 a에 더하는 로직
                     String[] strArr = line.split(regex);
+                    System.out.print(strArr[0]);
+                    System.out.print(strArr[1]);
+                    System.out.print(strArr[2]);
+                    System.out.print(strArr[3]);
+                    System.out.println();
                     list.add(strArr);
-                    //System.out.println(line);
+                    System.out.println(line);
                 }
             }
 

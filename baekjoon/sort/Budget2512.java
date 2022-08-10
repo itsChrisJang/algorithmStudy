@@ -29,7 +29,7 @@ public class Budget2512 {
         }
 
         int m = Integer.parseInt(br.readLine());
-        
+
         while(left<=right) {
             int mid = (left+right)/2;
             long budget =0;
