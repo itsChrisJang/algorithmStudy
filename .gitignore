@@ -1,6 +1,41 @@
+# Java class files
+*.class
 
-baekjoon/Test3.java
-baekjoon/Test.java
-codingTest/Alchera/test.java
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# IDEs
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+out/
+### Eclipse ###
+.project
+.classpath
+.settings/
+bin/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Log files
+*.log
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Specific files to ignore
 baekjoon/Test.java
 baekjoon/Test2.java
+baekjoon/Test3.java
+codingTest/Alchera/test.java
